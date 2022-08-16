@@ -3,6 +3,7 @@ import TaskStorage from "../module/TaskStorage.js";
 import UI from "../module/UI.js";
 import ManageTask from "../module/ManageTask.js";
 
+const bgColor='#f2f2f2';
 UI.displayTodoList();
 ManageTask.fillCheckBox();
 ManageTask.addEventToCheckBox();
@@ -24,8 +25,8 @@ lists.forEach((list) => {
     const menuIcon = form.children[2];
     deleteIcon.style.display = "block";
     menuIcon.style.display = "none";
-    list.style.backgroundColor = "#f2f2f2";
-    inputBox.style.backgroundColor = "#f2f2f2";
+    list.style.backgroundColor = bgColor;
+    inputBox.style.backgroundColor = bgColor;
   });
 });
 
